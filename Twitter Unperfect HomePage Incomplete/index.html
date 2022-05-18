@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./Css/side_bar_style.css">
+    <link rel="stylesheet" href="./Css/main_content_style.css">
+    <link rel="stylesheet" href="./Css/news_bar_style.css">
+    <link rel="stylesheet" href="./Css/body_style.css"> 
+    <script src="./Js/index.js" defer ></script>
+
+    <script src="https://kit.fontawesome.com/3c6e4e9ead.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&famPily=Ubuntu&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins:wght@400;600&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            --background: #000;
+            --BorderColor:  rgba(140, 140, 140, 0.4);
+            --BackgroundGrayHover: rgba(224,224,224, 0.1);
+            --GrayLow: rgba( 38,38,38,1.0 );
+            --ComplementColor: gray;
+            --TwitterColor: rgb(29, 161, 242, 1);
+            --TwitterColorLowOpacity: rgba(29, 161, 242, 0.14);
+            --TwitterColorLight: rgb(39, 171, 252, 1);
+            --TwitterRedColor: rgb(249, 24, 128, 1);
+            --TwitterGreenColor: rgb(0, 186, 124, 1);
+            --TwitterGreenColorLowOpacity: rgb(0, 186, 124, 0.14);
+            --TwitterRedColorLowOpacity: rgb(249, 24, 128, 0.14);
+            --backgroundImageColor: rgba(29, 155, 240, 0.2);
+
+            --TextColor: #fff;
+            --GrayTextColor: rgba( 119,119,119,1.0 );
+            --BlueTextColor: rgb(29, 161, 242);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    
+    </header>
+    <main>
+        <div class="margin_div"></div>
+
+        <aside class="aside_bar">
+            <div class="fixed">
+                <div class="container_div "></div>
+                <a class="special_link " id="reload">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+            <nav id="side_nav" >
+                    <a class="side_link" id="home_page" 
+                    onmouseover="hover_effect( 'home_page_div','home_page', true, 'var( --BackgroundGrayHover)','var( --background )' )">
+                        <div class="side_itens" id="home_page_div">
+                                <label for="home_page_span" class="label_width">
+                                    <i class="fas fa-home"></i>
+                                </label>
+                                <span id="home_page_span">Home Page</span>
+                        </div>
+                    </a>
+
+                    <a class="side_link" id="explore" 
+                    onmouseover="hover_effect( 'explore_div','explore', true, 'var( --BackgroundGrayHover)','var( --background )' )">
+                        <div class="side_itens" id="explore_div">
+                                <label for="explore_span" class="label_width">
+                                    <i class="fas fa-hashtag"></i>
+                                </label>
+                                <span id="explore_span">Explore</span>
+                        </div>
+                    </a>
+
+                    <a class="side_link" id="notifications" 
+                    onmouseover="hover_effect( 'notifications_div','notifications', true, 'var( --BackgroundGrayHover)','var( --background )' )">
+                        <div class="side_itens" id="notifications_div">
+                                <label for="notifications_span" class="label_width">
+                                    <i class="far fa-bell"></i>
+                                </label>
+                                <span id="notifications_span">Notifications</span>
+                        </div>
+                    </a>
+
+                <a class="side_link" id="messages"
+                onmouseover="hover_effect( 'messages_div','messages', true, 'var( --BackgroundGrayHover)','var( --background )' )">
+                        <div class="side_itens" id="messages_div">
+                            <label for="messages_span" class="label_width">
+                                <i class="far fa-envelope-open"></i>
+                            </label>
+                            <span id="messages_span">Messages</span>
+                        </div>
+                    </a>
+
+                    <a class="side_link" id="Bookmarks"
+                onmouseover="hover_effect( 'Bookmarks_div','Bookmarks', true, 'var( --BackgroundGrayHover)','var( --background )' )">
+                        <div class="side_itens" id="Bookmarks_div">
+                            <label for="Bookmarks_span" class="label_width">
+                                <i class="far fa-bookmark"></i>
+                            </label>
+                            <span id="Bookmarks_span">Bookmarks</span>
+                        </div>
+                    </a>
+
+                    <a class="side_link" id="lists"
+                onmouseover="hover_effect( 'lists_div','lists', true, 'var( --BackgroundGrayHover)','var( --background )' )">
+                        <div class="side_itens" id="lists_div">
+                            <label for="lists_span" class="label_width">
+                                <i class="far fa-bookmark"></i>
+                            </label>
+                            <span id="lists_span">Lists</span>
+                        </div>
+                    </a>
+
+                    <a class="side_link" id="profile"
+                    onmouseover="hover_effect( 'profile_div','profile', true, 'var( --BackgroundGrayHover)','var( --background )' )">
+                        <div class="side_itens" id="profile_div">
+                            <label for="profile_span" class="label_width">
+                                <i class="far fa-address-card"></i>
+                            </label>
+                            <span id="profile_span">Profile</span>
+                        </div>
+                    </a>
+
+                    <a class="side_link" id="more"
+                    onmouseover="hover_effect( 'more_div','more', true, 'var( --BackgroundGrayHover)','var( --background )' )">
+                        <div class="side_itens" id="more_div">
+                            <label for="more_span" class="label_width">
+                                <i class="far fa-plus-square"></i>
+                            </label>
+                            <span id="more_span">More</span>
+                        </div>
+                    </a>
+            </nav>
+            
+                <div class="align_tweet_box ">
+                    <div id="tweet_btn_box">
+                        <button id="tweet_btn">
+                        <i class="fas fa-pencil-alt"></i>
+                        <span>Tweet</span>
+                        </button>
+                    </div> 
+                </div>
+
+                <div class="media_profile_link ">
+                    <nav class="side_profile_link" id="profile_box">
+                        <img src="./Img/perfil.jpg" alt="User profile image" width="35" height="35" class="profile_img">
+
+                        <div class="names_infos">
+                            <div class="span_box" id="span_box"> <span id="profile_name">Pedro Vinicius Coêlho Belém</span> </div>
+                            
+                            <div class="link_box"> <a> @pedrovinicebas </a> </div>
+                        </div>
+
+                        <div class="icon_media" id="icon_plus">
+                            <i class="fas fa-plus"></i>
+                        </div> 
+                    </nav>
+                </div>
+            </div>
+        </aside>
+
+        <section class="content">
+            <div class="top_side_bar" id="top_side_bar_id" > 
+            <!-- Função onscroll="GetTopSideId('top_side_bar_id')" Aplicada aqui  -->
+                <div class="page_indicator format" id="page_indicator_id" 
+                onload="AjustPosition('page_indicator_id','margin_div_id' )">
+                    <span>Home</span>
+                    <div class="stars">
+                        <i class="far fa-plus"></i> <!-- not find star funcional icon in font awesome  -->
+                    </div>         
+                </div>
+                <div class="search_box">
+                    <form id="search_element">
+                        <label for="search_input" id="search_icon" >
+                            <i class="fal fa-search"></i>
+                        </label>
+
+                        <input type="text" id="search_input" 
+                        placeholder="Search Twitter">
+
+                        <label for="search_input" id="close_icon">
+                            <i class="fas fa-times-circle"></i>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="content_box">
+                <section class="main_content">
+
+                    <form class="write_tweet format">
+                        <div class="left_side">
+                            <div class="box_profile_img">
+                                <img src="./Img/perfil.jpg" alt="User profile image" width="40" height="40" class="profile_img"> 
+                            </div>
+                        </div>
+                        
+                        <div class="right_side">
+                            <div class="box_input_tweet">
+                                <input class="input_tweet" type="text" 
+                                placeholder="What's happening?" id="input_tweet_text"s>
+                            </div>
+                            <div class="tweet_settings">
+                                <div class="setting_bar_1">
+                                    <div class="who_can_reply">
+                                        <div class="box_who_can_reply">
+                                            <label for="span_who_can_reply">
+                                                <i class="fa-regular fa-earth-americas"></i>
+                                            </label>
+                                            <span id="span_who_can_reply">Everyon can reply</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="setting_bar_2">
+                                    <div class="bar_btn_set">
+                                        <button id="add_img_media" class="tweet_buttons_sets">
+                                            <i class="fa fa-solid fa-image"></i>
+                                        </button>
+                                        <button id="add_gif_media" class="tweet_buttons_sets">
+                                            <i class="fa fa-regular fa-square"></i>
+                                        </button>
+                                        <button id="add_vote" class="tweet_buttons_sets">
+                                            <i class="fa fa-thin fa-chart-bar"></i>
+                                        </button>
+                                        <button id="add_emoji" class="tweet_buttons_sets">
+                                            <i class="fa fa-regular fa-face-smile"></i>
+                                        </button>
+                                        <button id="add_schedule" class="tweet_buttons_sets">
+                                            <i class="fa-regular fa-calendar"></i>
+                                        </button>
+
+                                        <button id="add_localization" class="tweet_buttons_sets" disabled>
+                                            <i class="fa-regular fa-location-dot"></i>
+                                        </button>
+                                    </div>
+                                    <div class="box_tweet_btn">
+                                        <button>Tweet</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="new_tweets">
+                        <span> Show n Tweets </span>
+                    </div>
+
+                    <article class="tweet_major_box format" id="tweet_major_box_id T=1">
+                        <div class="top_side">
+                            <div class="left_side">
+                                <!-- <div class="side_profile_img" id="profile_img_set" style="height: 40px;"></div> -->
+                                <img src="./Img/perfil.jpg" alt="User profile image" width="40" height="40" class="profile_img">   
+                            </div>
+                            <div class="right_side">
+                                <nav class="profile_infos_plus">
+                                    <div class="top_side">
+                                        <div class="perfil_name">
+                                            <a>Pedro Vinicius Coêlho Belém</a>
+                                            <i class="fas fa-user-check"></i>
+                                        </div>
+                                        
+                                        <div class="more_tweet_infos">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="bot_side">
+                                        <a>@pedrovinicebas</a>
+                                        <div class="point">
+                                            <span>·</span>
+                                        </div>
+                                        <a>5h</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        
+                        <div class="tweet_content">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed semper quam. Quisque interdum nisl sit amet mattis tristique. Nam at auctor lacus, nec placerat purus. Donec sit amet libero lacus. Sed vitae pharetra urna, nec feugiat neque. Donec sapien.</p>
+                        </div>
+        
+                        <div class="special_content_box" id="special_content_box T=1" > <!-- IMG,  OR QUOTE TWEET -->
+                            <img src="./Img/Miniatura - Dama de Sangue.png" class="special_content" id="special_content T=1" onload="TakeMainColor('special_content T=1', 'special_content_box T=1')">
+                            <!-- <canvas id="preview"></canvas>
+                            <canvas id="canvas"></canvas>
+                            <input id="input" type="file" /> -->
+                        </div>
+        
+                        <div class="tweet_interaction"> 
+                            <div class="interaction_box" id="interaction_box1 T=1"
+                            onmouseover="hover_effect( 'interaction_coment T=1', 'interaction_box1 T=1',false, 'var( --TwitterColor )','var( --ComplementColor )' )" >
+                                <i class="fa-regular fa-comment" id="interaction_coment T=1"></i>
+                            </div>
+
+                            <div class="interaction_box" id="interaction_box2 T=1"
+                            onmouseover="hover_effect( 'interaction_retweet T=1', 'interaction_box2 T=1',false, 'var( --TwitterGreenColor )','var( --ComplementColor )' )" >
+                                <i class="fa-solid fa-retweet" id="interaction_retweet T=1"></i>
+                            </div>
+
+                            <div class="interaction_box" id="interaction_box3 T=1"
+                            onmouseover="hover_effect( 'interaction_like T=1', 'interaction_box3 T=1',false, 'var( --TwitterRedColor )','var( --ComplementColor )' )" >
+                                <i class="fa-regular fa-heart" id="interaction_like T=1"></i>
+                            </div>
+
+                            <div class="interaction_box" id="interaction_box4 T=1"
+                            onmouseover="hover_effect( 'interaction_share T=1', 'interaction_box4 T=1',false, 'var( --TwitterColor )','var( --ComplementColor )' )" >
+                                <i class="fa-regular fa-arrow-up-from-bracket" id="interaction_share T=1"></i>
+                            </div>
+                                
+                        </div>
+                    </article>
+
+                    <article class="tweet_major_box format" id="tweet_major_box_id T=2">
+                        <div class="top_side">
+                            <div class="left_side">
+                                <!-- <div class="side_profile_img" id="profile_img_set" style="height: 40px;"></div> -->
+                                <img src="./Img/perfil.jpg" alt="User profile image" width="40" height="40" class="profile_img">   
+                            </div>
+                            <div class="right_side">
+                                <nav class="profile_infos_plus">
+                                    <div class="top_side">
+                                        <div class="perfil_name">
+                                            <a>Pedro Vinicius Coêlho Belém</a>
+                                            <i class="fas fa-user-check"></i>
+                                        </div>
+                                        
+                                        <div class="more_tweet_infos">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="bot_side">
+                                        <a>@pedrovinicebas</a>
+                                        <div class="point">
+                                            <span>·</span>
+                                        </div>
+                                        <a>5h</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        
+                        <div class="tweet_content">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed semper quam. Quisque interdum nisl sit amet mattis tristique. Nam at auctor lacus, nec placerat purus. Donec sit amet libero lacus. Sed vitae pharetra urna, nec feugiat neque. Donec sapien.</p>
+                        </div>
+        
+                        <div class="special_content_box" id="special_content_box T=2" > <!-- IMG,  OR QUOTE TWEET -->
+                            <img src="./Img/Miniatura - Dama de Sangue.png" class="special_content" id="special_content T=2" onload="TakeMainColor('special_content T=2', 'special_content_box T=2')">
+                            <!-- <canvas id="preview"></canvas>
+                            <canvas id="canvas"></canvas>
+                            <input id="input" type="file" /> -->
+                        </div>
+        
+                        <div class="tweet_interaction"> 
+                            <div class="interaction_box" id="interaction_box1 T=2"
+                            onmouseover="hover_effect( 'interaction_coment T=2', 'interaction_box1 T=2',false, 'var( --TwitterColor )','var( --ComplementColor )' )" >
+                                <i class="fa-regular fa-comment" id="interaction_coment T=2"></i>
+                            </div>
+
+                            <div class="interaction_box" id="interaction_box2 T=2"
+                            onmouseover="hover_effect( 'interaction_retweet T=2', 'interaction_box2 T=2',false, 'var( --TwitterGreenColor )','var( --ComplementColor )' )" >
+                                <i class="fa-solid fa-retweet" id="interaction_retweet T=2"></i>
+                            </div>
+
+                            <div class="interaction_box" id="interaction_box3 T=2"
+                            onmouseover="hover_effect( 'interaction_like T=2', 'interaction_box3 T=2',false, 'var( --TwitterRedColor )','var( --ComplementColor )' )" >
+                                <i class="fa-regular fa-heart" id="interaction_like T=2"></i>
+                            </div>
+
+                            <div class="interaction_box" id="interaction_box4 T=2"
+                            onmouseover="hover_effect( 'interaction_share T=2', 'interaction_box4 T=2',false, 'var( --TwitterColor )','var( --ComplementColor )' )" >
+                                <i class="fa-regular fa-arrow-up-from-bracket" id="interaction_share T=2"></i>
+                            </div>
+                        </div>
+                    </article>
+
+                </section>
+                <aside class="news_bar">
+                    <div class="news_bar_box">
+                        <div class="news_bax_header">
+                            <span>What's happening</span>
+
+                            <nav class="">
+                                <a class="news_and_img" id="">
+                                    <div class="text_news_box">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                    <div class="img_news_box">
+                                        <img src="" alt="">
+                                    </div>
+                                </a>
+                                <a class="news_promoted" id="">
+                                    <div class="text_news_box">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                </a>
+                                <a class="news_trending" id="">
+                                    <div class="text_news_box">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                </a>
+                                <a class="news_trending" id="">
+                                    <div class="text_news_box">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                </a>
+                                <a class="news_and_img" id="">
+                                    <div class="text_news_box">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                    <div class="img_news_box">
+                                        <img src="" alt="">
+                                    </div>
+                                </a>
+
+                                <a class="" id=""></a>
+                            </nav>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <div class="margin_div" id="margin_div_id"></div>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
