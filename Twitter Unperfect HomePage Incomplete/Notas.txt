@@ -1,4 +1,0 @@
-O hover dos elementos Aside parece ser ativado 
-
-
-
