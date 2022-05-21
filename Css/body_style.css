@@ -26,6 +26,21 @@ main {
 @media ( max-width: 1200px ){
     main {
         display: grid;
-        grid-template-columns: 0.35fr 120px 550px 330px 1fr;
+        grid-template-columns: 0.35fr 120px 850px 1fr;
+    }
+}
+
+@media ( max-width: 900px ){
+    main {
+        display: grid;
+        grid-template-columns: 0.35fr 120px 520px 1fr;
+    }
+
+    #search_box_id{
+        display: none;
+    }
+
+    #news_bar_aside_id{
+        display: none;
     }
 }

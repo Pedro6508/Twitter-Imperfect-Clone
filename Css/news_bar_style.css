@@ -16,7 +16,7 @@ main .news_bar_aside .news_bar_box .news_bar {
 
     overflow: hidden;
     background-color: var( --GrayLowPlus );
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 10px 0 0px 0;
 }
 
