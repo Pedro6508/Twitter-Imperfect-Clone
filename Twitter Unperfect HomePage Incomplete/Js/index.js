@@ -1,5 +1,5 @@
 let idStore = [];
-const profileName = document.getElementById('profile_name')
+const profileName = document.getElementById('profile_name');
 
 function hover_effect( idSon,id, setBorder, color, defaultColor ){
     let element_son = document.getElementById( idSon );

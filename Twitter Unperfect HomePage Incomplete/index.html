@@ -28,6 +28,7 @@
             --BorderColor:  rgba(140, 140, 140, 0.4);
             --BackgroundGrayHover: rgba(224,224,224, 0.1);
             --GrayLow: rgba( 38,38,38,1.0 );
+            --GrayLowPlus: rgba( 25,25,27,1.0 );
             --ComplementColor: gray;
             --TwitterColor: rgb(29, 161, 242, 1);
             --TwitterColorLowOpacity: rgba(29, 161, 242, 0.14);
@@ -382,60 +383,96 @@
                     </article>
 
                 </section>
-                <aside class="news_bar">
+                <aside class="news_bar_aside">
                     <div class="news_bar_box">
-                        <div class="news_bax_header">
-                            <span>What's happening</span>
+                        <div class="news_bar">
+                            <div class="format_news_bar">
+                                <span>What's happening</span>
+                            </div>
 
                             <nav class="">
-                                <a class="news_and_img" id="">
-                                    <div class="text_news_box">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
+                                <a class="news_and_img"id="">
+                                    <div class="link_content format_news_bar">
+                                        <div class="text_news_box">
+                                            <span>News · 4 hours ago</span>
+                                            <p class="under_text">São Paulo registra madrugada mais fria do ano</p>
 
-                                    <div class="img_news_box">
-                                        <img src="" alt="">
+                                        </div>
+
+                                        <div class="img_news_box">
+                                            <img src="./Img/noticia_frio_sp.jpg" alt="" 
+                                            width="65" height="65">
+                                        </div>
                                     </div>
+                                        
                                 </a>
+
                                 <a class="news_promoted" id="">
-                                    <div class="text_news_box">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
+                                    <div class="link_content format_news_bar">
+                                        <div class="text_news_box">
+                                            <span>Promoted</span>
+                                            <p class="under_text">Lorem ipsum dolor sit amet, consectetur elit.</p>
+                                        </div>
 
+                                        <div class="more_tweet_infos" id="more_tweet_infos_1"
+                                        onmouseover="hover_effect( 'more_i_1', 'more_tweet_infos_1',false, 'var( --TwitterColor )','var( --ComplementColor )' )">
+                                            <i class="fas fa-ellipsis-h" id="more_i_1"></i>
+                                        </div>
+                                    </div>
+                                    
                                 </a>
+
                                 <a class="news_trending" id="">
-                                    <div class="text_news_box">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
+                                    <div class="link_content format_news_bar">
+                                        <div class="text_news_box">
+                                            <span>Trending in Brazil</span>
+                                            <p>Lorem ipsum dolor sit amet,  elit.</p>
+                                            <p class="under_text">Lorem dolor sit amet, elit.</p>
+                                        </div>
+
+                                        <div class="more_tweet_infos" id="more_tweet_infos_2"
+                                        onmouseover="hover_effect( 'more_i_2', 'more_tweet_infos_2',false, 'var( --TwitterColor )','var( --ComplementColor )' )">
+                                            <i class="fas fa-ellipsis-h" id="more_i_2"></i>
+                                        </div>                                        
                                     </div>
 
                                 </a>
-                                <a class="news_trending" id="">
-                                    <div class="text_news_box">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
+
+                                <a class="news_trending " id="">
+                                    <div class="link_content format_news_bar">
+                                        <div class="text_news_box">
+                                            <span>Trending in Brazil</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+                                            <p class="under_text">Lorem ipsum sit amet, consectetur lit.</p>
+                                        </div>
+
+                                        <div class="more_tweet_infos" id="more_tweet_infos_3"
+                                        onmouseover="hover_effect( 'more_i_3', 'more_tweet_infos_3',false, 'var( --TwitterColor )','var( --ComplementColor )' )">
+                                            <i class="fas fa-ellipsis-h" id="more_i_3"></i>
+                                        </div>
                                     </div>
 
                                 </a>
+
                                 <a class="news_and_img" id="">
-                                    <div class="text_news_box">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-
-                                    <div class="img_news_box">
-                                        <img src="" alt="">
+                                    <div class="link_content format_news_bar">
+                                        <div class="text_news_box">
+                                            <span>News · 12 hours ago</span>
+                                            <p class="under_text">Lorem ipsum consectetur adipiscing elit.</p>
+    
+                                        </div>
+    
+                                        <div class="img_news_box ">
+                                            <img src="./Img/noticia_ucrania.jpeg" alt="">
+                                        </div>
                                     </div>
                                 </a>
 
-                                <a class="" id=""></a>
+                                <a class="show_more" id="">
+                                    <div class="link_content format_news_bar">
+                                        <span>Show More</span>
+                                    </div>
+                                </a>
                             </nav>
                         </div>
                     </div>
