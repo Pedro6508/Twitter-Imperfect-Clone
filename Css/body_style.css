@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    color: #fff;
+
+    font-family: "Oswald", sans-serif;
+}
+
+i {
+    font-family: "FontAwesome";
+}
+
+body {
+    background-color: var(--background);
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 230px 850px 1fr;
+
+}
+
+@media ( max-width: 1200px ){
+    main {
+        display: grid;
+        grid-template-columns: 0.35fr 120px 550px 330px 1fr;
+    }
+}
