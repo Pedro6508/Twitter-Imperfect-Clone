@@ -30,10 +30,26 @@ main {
     }
 }
 
-@media ( max-width: 900px ){
+@media ( max-width: 1000px ){
     main {
         display: grid;
-        grid-template-columns: 0.35fr 120px 520px 1fr;
+        grid-template-columns: 0.8fr 120px 520px 1fr;
+    }
+
+    #aside_bar_id{
+        display: flex;
+        margin-left: 0;
+        position: relative;
+        right: -25px;
+    }
+
+    #aside_bar-id .fixed{
+        display: flex;
+        justify-content: center;
+    }
+
+    #aside_bar_id .special_link{
+        width: 45px;
     }
 
     #search_box_id{
