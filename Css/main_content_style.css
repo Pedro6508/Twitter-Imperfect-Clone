@@ -177,7 +177,7 @@ main .write_tweet .setting_bar_1 .who_can_reply .box_who_can_reply{
     align-items: center;
 
     height: 24px;
-    width: 120px;
+    width: 140px;
 }
 
 main .write_tweet .setting_bar_1 .who_can_reply .box_who_can_reply:hover{

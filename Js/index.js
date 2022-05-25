@@ -23,8 +23,8 @@ function hover_effect( idSon,id, setBorder, color, defaultColor ){
     console.log( idStore );
 }
 
-if( profileName.innerText.length >= 19 ){ // put in a function 
-    profileName.replaceWith( profileName.innerText.substring( 0,18 ) , "..." );
+if( profileName.innerText.length >= 14 ){ // put in a function 
+    profileName.replaceWith( profileName.innerText.substring( 0,14 ) , "..." );
 }
 
 function isLoaded( imageObject ){
