@@ -1,7 +1,6 @@
-
 main .content{
-    border-left:  1px solid var(--BorderColor);
-    /* overflow: hidden; */
+    border-left: 1px solid var(--BorderColor);
+    overflow: hidden;
 }
 
 main .content .content_box{
@@ -37,7 +36,8 @@ main .content .top_side_bar #page_indicator_id{
     justify-content: space-between;
     font-size: 21px;
     padding: 10px 15px 0px 15px;
-    width: 519px;
+    width: 520px;
+    margin-right: 1px;
 
     background-color: rgba( 0, 0,0, 0.5 );
     backdrop-filter: blur(7px);
@@ -45,7 +45,7 @@ main .content .top_side_bar #page_indicator_id{
 }
 
 main .content .top_side_bar .search_box{ 
-    margin-left: 1px;
+    margin-left: 2px;
     width: 330px;
 
     display: flex;
